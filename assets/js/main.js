@@ -16,7 +16,16 @@ $(document).ready(function() {
   });
 
 
+// typewriter effect
 
+var p = document.getElementById('typewriter');
+var n = 0;
+var str = p.innerHTML;
+p.innerHTML = '';
+setInterval(function() {
+  n = n + 1;
+  p.innerHTML = str.slice(0, n)
+}, 80);
 
 
   });

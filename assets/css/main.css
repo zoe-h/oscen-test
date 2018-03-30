@@ -100,6 +100,7 @@ body {
     }
 }
 
+
 .this-month-content {
   display: flex;
   flex-flow: row wrap;
@@ -146,6 +147,7 @@ body {
 
 .issue-title{
   font-size: 30px;
+  margin: 20px 0;
 }
 
 .article-panel {
