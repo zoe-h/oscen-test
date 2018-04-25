@@ -11,10 +11,35 @@ $(document).ready(function() {
 
 
     //Hide the other panels
-//    $(".article-container").not($(this).next()).slideUp('fast');
+   $(".article-panel").not($(this).next()).slideUp('fast');
 
   });
 
+
+// hover effect
+  $('.chapter-toggle').click(function(){
+
+  $(this).closest('.chapter-accordion').next().find('.chapter-toggle').addClass('nudge-down');
+
+  });
+
+
+  $('.chapter-toggle').mouseOver(function(){
+    $(this).addClass('nudge-down');
+  });
+
+
+// tranistion
+
+
+function transition(){
+     $(".white-slide").addClass('transition');
+}
+
+window.onbeforeunload = function(){
+  transition();
+  alert('Bye.');
+};
 
 // typewriter effect
 
